@@ -1,0 +1,8 @@
+{
+  "app_name": "MyApplication",
+  "environment": "production",
+  "database_url": "",
+  "port": 80,
+  "debug": true,
+  "log_level": "verbose"
+}

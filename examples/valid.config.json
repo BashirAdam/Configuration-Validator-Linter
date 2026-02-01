@@ -1,0 +1,11 @@
+{
+  "app_name": "MyApplication",
+  "environment": "production",
+  "database_url": "postgresql://user:password@db.example.com:5432/myapp",
+  "port": 3000,
+  "api_key": "sk-1234567890abcdefghijklmnopqrstuvwxyz",
+  "debug": false,
+  "log_level": "info",
+  "cache_enabled": true,
+  "description": "Production configuration for MyApplication"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "configuration-validator-linter",
+  "version": "1.0.0",
+  "description": "A production-quality CLI tool for validating and linting application configuration files (JSON and .env) to detect common errors and security issues before deployment.",
+  "main": "src/cli.js",
+  "bin": {
+    "config-validator": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node test/validator.test.js",
+    "validate:valid": "node src/cli.js validate examples/valid.config.json",
+    "validate:invalid": "node src/cli.js validate examples/invalid.config.json",
+    "validate:env": "node src/cli.js validate examples/example.env",
+    "validate:all": "npm run validate:valid && npm run validate:env"
+  },
+  "keywords": [
+    "configuration",
+    "validator",
+    "linter",
+    "json",
+    "env",
+    "security",
+    "cli"
+  ],
+  "author": "Configuration Validator Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
